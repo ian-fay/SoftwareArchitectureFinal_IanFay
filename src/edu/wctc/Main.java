@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Maze maze = Maze.buildMaze();
+        Player player = new Player();
         ConsoleOutput consoleOutput = new ConsoleOutput();
 
 
@@ -35,13 +36,16 @@ public class Main {
                     }
                     break;
                 case 'i':
-                    consoleOutput.printText(maze.interactWithCurrentRoom());
+                    consoleOutput.printText(maze.doAction(player));
+                    //consoleOutput.printText(maze.interactWithCurrentRoom());
                     break;
                 case 'l':
-                    consoleOutput.printText(maze.lootCurrentRoom());
+                    consoleOutput.printText(maze.doAction(player));
+                    //consoleOutput.printText(maze.lootCurrentRoom());
                     break;
                 case 'x':
-                    consoleOutput.printText(maze.exitCurrentRoom());
+                    consoleOutput.printText(maze.doAction(player));
+                    //consoleOutput.printText(maze.exitCurrentRoom());
                     break;
                 case 'v':
                     consoleOutput.printList(Player.getInventory());

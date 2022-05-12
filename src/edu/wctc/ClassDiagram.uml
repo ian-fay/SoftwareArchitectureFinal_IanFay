@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.wctc</OriginalElement>
+  <nodes>
+    <node x="0.0" y="567.0">edu.wctc.ConsoleOutput</node>
+    <node x="544.0" y="567.0">edu.wctc.Main</node>
+    <node x="0.0" y="0.0">edu.wctc.Room</node>
+    <node x="0.0" y="468.0">edu.wctc.ExitRoom</node>
+    <node x="192.0" y="468.0">edu.wctc.EmptyRoom</node>
+    <node x="366.0" y="388.0">edu.wctc.RoomStrategies</node>
+    <node x="289.0" y="0.0">edu.wctc.Maze</node>
+    <node x="531.0" y="0.0">edu.wctc.Player</node>
+    <node x="384.0" y="468.0">edu.wctc.InteractRoom</node>
+    <node x="768.0" y="468.0">edu.wctc.LootRoom</node>
+    <node x="576.0" y="468.0">edu.wctc.StartRoom</node>
+    <node x="206.0" y="567.0">edu.wctc.RoomBuilder</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.wctc.InteractRoom" target="edu.wctc.RoomStrategies">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="edu.wctc.StartRoom" target="edu.wctc.RoomStrategies">
+      <point x="0.0" y="-27.0" />
+      <point x="662.0" y="448.0" />
+      <point x="511.59999999999997" y="448.0" />
+      <point x="41.599999999999966" y="15.0" />
+    </edge>
+    <edge source="edu.wctc.EmptyRoom" target="edu.wctc.RoomStrategies">
+      <point x="0.0" y="-27.0" />
+      <point x="278.0" y="448.0" />
+      <point x="428.4" y="448.0" />
+      <point x="-41.60000000000002" y="15.0" />
+    </edge>
+    <edge source="edu.wctc.ExitRoom" target="edu.wctc.RoomStrategies">
+      <point x="0.0" y="-27.0" />
+      <point x="86.0" y="438.0" />
+      <point x="386.8" y="438.0" />
+      <point x="-83.19999999999999" y="15.0" />
+    </edge>
+    <edge source="edu.wctc.LootRoom" target="edu.wctc.RoomStrategies">
+      <point x="0.0" y="-27.0" />
+      <point x="854.0" y="438.0" />
+      <point x="553.1999999999999" y="438.0" />
+      <point x="83.19999999999993" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="470.0" y="321.5" />
+  <SelectedNodes>
+    <node>edu.wctc.ConsoleOutput</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

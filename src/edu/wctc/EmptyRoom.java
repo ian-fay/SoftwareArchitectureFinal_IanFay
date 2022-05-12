@@ -1,12 +1,10 @@
 package edu.wctc;
 
-public class EmptyRoom extends Room {
+import edu.wctc.RoomStrategies.ActionStrategy;
 
-    public EmptyRoom(String name) {
-        super(name);
-    }
+public class EmptyRoom implements ActionStrategy {
 
-    public String getDescription() {
-        return "This room is simply metal floors and walls covered in broken machinery.";
+    public String doAction(Player player) {
+        return "There is nothing to do in this room but continue deeper.";
     }
 }

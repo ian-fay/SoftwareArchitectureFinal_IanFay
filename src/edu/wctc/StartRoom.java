@@ -1,12 +1,10 @@
 package edu.wctc;
 
-public class StartRoom extends Room{
-    public StartRoom(String name) {
-        super(name);
-    }
+import edu.wctc.RoomStrategies.ActionStrategy;
 
-    //@Override
-    public String getDescription() {
-        return "This is the room you entered the ship in. The Airlock has sealed behind you. You will have to find another way out.";
+public class StartRoom implements ActionStrategy {
+
+    public String doAction(Player player) {
+        return "There is nothing to do in this room but continue deeper.";
     }
 }

@@ -1,21 +1,12 @@
 package edu.wctc;
 
-import edu.wctc.RoomStrategies.ExitableStrategy;
+import edu.wctc.RoomStrategies.ActionStrategy;
 
-public class ExitRoom extends Room implements ExitableStrategy {
-
-
-    public ExitRoom(String name) {
-        super("Exit Airlock");
-    }
+public class ExitRoom implements ActionStrategy {
 
     //@Override
-    public String getDescription() {
-        return "This airlock will take you out of the ship [Leave].";
-    }
 
-    //@Override
-    public String exit(Player player) {
+    public String doAction(Player player) {
 
         return "You left the maze.";
     }

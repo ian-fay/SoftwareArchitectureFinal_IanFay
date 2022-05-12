@@ -1,6 +1,8 @@
 package edu.wctc;
 
-public abstract class Room {
+import edu.wctc.RoomStrategies.ActionStrategy;
+
+public class Room {
     private String name;
     private Room north;
     private Room south;
@@ -8,9 +10,13 @@ public abstract class Room {
     private Room west;
     private Room up;
     private Room down;
+    ActionStrategy theAction;
+    private String description;
 
-    public Room(String name) {
+    public Room(String name, ActionStrategy actionStrategy, String description) {
         this.name = name;
+        this.theAction = actionStrategy;
+        this.description = description;
     }
 
     public String getName() {
@@ -21,7 +27,13 @@ public abstract class Room {
         this.name = name;
     }
 
-    public abstract String getDescription();
+    public String getDescription()  {
+        return description;
+    }
+
+    public String doAction(Player player) {
+        return theAction.doAction(player);
+    }
 
     public String getExits() {
         String output = "Exits are:";
